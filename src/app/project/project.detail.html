@@ -1,0 +1,66 @@
+<section id="projectDetailHero" class="hero is-medium is-black is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Project Details:
+      </h1>
+      <h2 class="subtitle">
+        Changes, made easy.
+      </h2>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div id="projectDetailPanel1" class="panel">
+    <p id="projectDetailPanelHeading1" class="panel-heading">
+      Assigned To:
+    </p>
+    <div class="panel-body">
+      <table id="projectDetailPanel1Table" class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Grade</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{projects.assignments.length.student.firstName}} {{projects.assignments.length.student.lastName}}</td>
+            <td>90%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id="projectDetailPanel2" class="panel">
+    <p id="projectDetailPanelHeading2" class="panel-heading">
+      Edit Project:
+    </p>
+    <div class="panel-body">
+      <div id="projectDetailPanel2Columns" class="columns" style="width: 96%">
+        <div class="column is-half">
+          <label class="label">Project Name:</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="Text input" ng-model="projectDetail.projects.name">
+            </p>
+        </div>
+        <div class="column">
+          <label class="label">Description:</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="Text input" ng-model="projectDetail.projects.description">
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: relative; text-align: center">
+    <a ng-click="projectDetail.save(projects)" id="projectDetailSubmitBtn" style="width: 150px" class="button is-primary">
+      <span class="icon">
+        <i class="fa fa-check"></i>
+      </span>
+      <span>Submit</span>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en"  id="mainBody" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Classroom Manager</title>
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/bulma/css/bulma.css" />
+<link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+<!-- endbower -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<!-- inject:css -->
+<link rel="stylesheet" href="app/css/styles.css">
+<!-- endinject -->
+</head>
+
+<body>
+	<div>
+		<nav id="navBar" class="nav">
+			<div class="nav-left">
+			  	<a class="nav-item" href="#">
+			    	<p id="projectTitle">Classroom Manager</p>
+			    </a>
+			</div>
+			<div class="nav-right nav-menu">
+			    <a id="navBarList" class="nav-item" ui-sref="dashboard">
+			      <i class="fa fa-home icon is-medium" aria-hidden="true"></i>Dashboard
+			    </a>
+			    <p><i id="navDivider" class="fa fa-ellipsis-v icon is-large" aria-hidden="true"></i></p>
+			    <a id="navBarList" class="nav-item" ui-sref="student.grid">
+			      <i class="fa fa-user icon is-medium" aria-hidden="true"></i>Students
+			    </a>
+			    <p><i id="navDivider" class="fa fa-ellipsis-v icon is-large" aria-hidden="true"></i></p>
+			    <a id="navBarList" class="nav-item" ui-sref="project.grid">
+			      <i class="fa fa-pencil-square icon is-medium" aria-hidden="true"></i>Projects
+			    </a>
+			</div>
+		</nav>
+	</div>
+	<main>
+			<div ui-view>
+			</div>
+	</main>
+
+		<footer id="footer" class="footer">
+		  <div class="container">
+		    <div class="content has-text-centered">
+		      <p id="footerText">Classroom Manager | by: Dreu Stepanik.
+		      </p>
+		      <p>
+			    <a id="footerIcon" class="icon" href="https://github.com/DreuStepanik">
+			        <i class="fa fa-github"></i>
+			    </a>
+			    <a id="linkedIn" href="https://www.linkedin.com/in/dreu-stepanik">
+			        <i class="fa fa-linkedin"></i>
+			    </a>
+		      </p>
+		    </div>
+		  </div>
+		</footer>
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<!-- endbower -->
+<!-- inject:js -->
+<script src="app/app.module.js"></script>
+<script src="app/core/assignment.factory.js"></script>
+<script src="app/core/project.factory.js"></script>
+<script src="app/core/student.factory.js"></script>
+<script src="app/dashboard/dashboard.controller.js"></script>
+<script src="app/project/project.addProject.controller.js"></script>
+<script src="app/project/project.detail.controller.js"></script>
+<script src="app/project/project.grid.controller.js"></script>
+<script src="app/student/student.addStudent.controller.js"></script>
+<script src="app/student/student.detail.controller.js"></script>
+<script src="app/student/student.grid.controller.js"></script>
+<!-- endinject -->
+</body>
+</html>

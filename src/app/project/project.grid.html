@@ -1,0 +1,55 @@
+<section id="projectGridHero" class="hero is-medium is-black is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Projects:
+      </h1>
+      <h2 class="subtitle">
+        Current Student Projects
+      </h2>
+    </div>
+  </div>
+</section>
+<div class="container" id="studentGrid">
+  <div id="projectGridPanel" class="panel">
+      <div id="projectGridPanelHeading" class="panel-heading">
+        <p class="has-text-left">Projects
+          <a ui-sref="project.addProject" id="projectGridBtn" class="button is-primary">
+            <span class="icon">
+              <i class="fa fa-plus"></i>
+            </span>
+            <span>Assign New</span>
+          </a>
+        </p>
+      </div>
+        <table class="table pan-two panel-block" id="projectGridTable">
+          <thead>
+            <tr>
+              <th>Project Name:</th>
+              <th>Assigned Count:</th>
+              <th></th>
+              <th>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="projects in projectGrid.projects">
+              <td>{{projects.name}}</td>
+              <td>{{projects.assignments.length}}</td>
+              <td class="is-icon">
+                <a ui-sref="project.detail({ projectId: projects.projectId })">
+                  <p id="projectGridEditButton">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</p>
+                </a>
+              </td>
+              <td class="is-icon">
+                <a ng-click="projectGrid.removeProject(projects)">
+                  <p id="projectGridDeleteButton">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i> Delete</p>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+</div>

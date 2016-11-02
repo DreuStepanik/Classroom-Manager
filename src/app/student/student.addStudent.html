@@ -1,0 +1,72 @@
+<section id="studentAddStudentHero" class="hero is-medium is-black is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Add a New Student:
+      </h1>
+      <h2 class="subtitle">
+        The More the Merrier.
+      </h2>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div id="studentAddStudentPanel1" class="panel">
+    <p id="studentAddStudentPanelHeading1" class="panel-heading">
+      Assign A Project:
+    </p>
+    <label class="label">
+      <p style="text-align: center; margin-bottom: 5px; margin-top: 9px; font-size: 1.4em; color: #fff; font-weight: bold">Project Name:</p></label>
+      <p id="studentAddStudentProjectSelect" class="control">
+        <span class="select">
+          <select style="width: 450px; background-color: #e0e0e0" ng-options="p.projectId as p.name for p in studentAddStudent.projects" ng-model="studentAddStudent.projectId">
+            <option value="">Select Project</option>
+            <option></option>
+          </select>
+        </span>
+      </p>
+  </div>
+  <div id="studentAddStudentPanel2" class="panel">
+    <p id="studentAddStudentPanelHeading2" class="panel-heading">
+      New Student:
+    </p>
+    <div class="panel-body">
+      <div id="studentAddStudentPanel2Columns" class="columns" style="width: 96%">
+        <div class="column is-half">
+          <label class="label">First Name:</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="Text input" ng-model="studentAddStudent.students.firstName">
+            </p>
+        </div>
+        <div class="column">
+          <label class="label">Last Name:</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="Text input" ng-model="studentAddStudent.students.lastName">
+            </p>
+        </div>
+      </div>
+      <div id="studentAddStudentPanel2Columns2" class="columns" style="width: 96%">
+        <div class="column is-half">
+          <label class="label">Email Address:</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="Text input" ng-model="studentAddStudent.students.emailAddress">
+            </p>
+        </div>
+        <div class="column">
+          <label class="label">Telephone:</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="Text input" ng-model="studentAddStudent.students.telephone">
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: relative; text-align: center">
+    <a ng-click="studentAddStudent.save(students)" id="studentAddStudentSubmitBtn" style="width: 150px" class="button is-primary">
+      <span class="icon">
+        <i class="fa fa-check"></i>
+      </span>
+      <span>Submit</span>
+    </a>
+  </div>
+</div>

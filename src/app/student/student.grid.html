@@ -1,0 +1,83 @@
+<section id="studentGridHero" class="hero is-medium is-black is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Students:
+      </h1>
+      <h2 class="subtitle">
+        Current Student Standings
+      </h2>
+    </div>
+  </div>
+</section>
+<div class="container" id="studentGrid">
+  <div id="studentGridPanel" class="panel">
+      <div id="studentGridPanelHeading" class="panel-heading">
+        <p class="has-text-left">Students
+          <a ui-sref="student.addStudent" id="studentGridBtn" class="button is-primary">
+            <span class="icon">
+              <i class="fa fa-plus"></i>
+            </span>
+            <span>Add Student</span>
+          </a>
+        </p>
+      </div>
+        <table class="table pan-two panel-block" id="studentGridTable">
+          <thead>
+            <tr>
+              <th>Student Name:</th>
+              <th>Assignments:</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- In the app module, I declared my StudentGridController to be referred to as 'studentGrid'. Therefore the following represents that declaration. -->
+            <tr ng-repeat="students in studentGrid.students">
+              <td>{{students.firstName}} {{students.lastName}}</td>
+              <td>{{students.assignments.length}}</td>
+              <td class="is-icon">
+                <!-- attach ({studentId: students.studentId}) to give value to the row being selected, to be updated.-->
+                <a ui-sref="student.detail({ studentId: students.studentId })">
+                  <p id="studentGridEditButton">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</p>
+                </a>
+              </td>
+              <td class="is-icon">
+              <!-- ng-click === call the controller (studentGrid); then attach the remove function service (vm.removeStudent = removeStudent;) -->
+                <a ng-click="studentGrid.removeStudent(students)">
+                  <p id="studentGridDeleteButton">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i> Delete</p>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+</div>
+        <!-- <table class="panel-block">
+         <thead id="studentGridTable">
+           <tr>
+             <th>Sudent Name</th>
+             <th>Assignments</th>
+             <th></th>
+             <th></th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td>{{name}}</td>
+             <td>{{assignemtns}}</td>
+             <td class="is-icon">
+               <a href="#">
+                 <p><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</p><br>
+               </a>
+             </td>
+             <td class="is-icon">
+               <a href="#">
+                 <p><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</p><br>
+               </a>
+             </td>
+           </tr>
+         </tbody>
+    

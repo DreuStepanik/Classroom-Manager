@@ -1,0 +1,99 @@
+<section id="studentDetailHero" class="hero is-medium is-black is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Student Details:
+      </h1>
+      <h2 class="subtitle">
+        Changes, made easy.
+      </h2>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <!-- <div id="studentDetailPanel1" class="panel">
+    <p id="studentDetailPanelHeading1" class="panel-heading">
+      Assign A New Project (optional):
+    </p>
+    <label class="label">
+      <p style="text-align: center; margin-bottom: 5px; margin-top: 9px; font-size: 1.4em; color: #fff; font-weight: bold">Project Name:</p></label>
+      <p id="studentDetailProjectSelect" class="control">
+        <span class="select">
+          <select style="width: 450px; background-color: #e0e0e0">
+            <option>Select Project</option>
+            <option ng-options="p.projectId as p.name for p in studentDetail.projects" ng-model="studentDetail.projectId"></option>
+          </select>
+        </span>
+      </p>
+  </div> -->
+  <div id="studentDetailPanel2" class="panel">
+    <p id="studentDetailPanelHeading2" class="panel-heading">
+      Assignments:
+    </p>
+    <div class="panel-body">
+      <table id="studentDetailPanel2Table" class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Grade</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{studentDetail.students.firstName}} {{studentDetail.students.lastName}}</td>
+            <td>90%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id="studentDetailPanel3" class="panel">
+    <p id="studentDetailPanelHeading3" class="panel-heading">
+      Edit Student:
+    </p>
+    <div class="panel-body">
+      <div id="studentDetailPanel3Columns" class="columns" style="width: 96%">
+        <div class="column is-half">
+          <label class="label">First Name:</label>
+            <p class="control">
+            <!-- (ng-model) = (Name of the controller).(name of the database table).(name of the column being called.) -->
+              <input class="input" type="text" placeholder="Text input" ng-model="studentDetail.students.firstName">
+            </p>
+        </div>
+        <div class="column">
+          <label class="label">Last Name:</label>
+            <p class="control">
+            <!-- (ng-model) = (Name of the controller).(name of the database table).(name of the column being called.) -->
+              <input class="input" type="text" placeholder="Text input" ng-model="studentDetail.students.lastName">
+            </p>
+        </div>
+      </div>
+      <div id="studentDetailPanel3Columns2" class="columns" style="width: 96%">
+        <div class="column is-half">
+          <label class="label">Email Address:</label>
+            <p class="control">
+            <!-- (ng-model) = (Name of the controller).(name of the database table).(name of the column being called.) -->
+              <input class="input" type="text" placeholder="Text input" ng-model="studentDetail.students.emailAddress">
+            </p>
+        </div>
+        <div class="column">
+          <label class="label">Telephone:</label>
+            <p class="control">
+            <!-- (ng-model) = (Name of the controller).(name of the database table).(name of the column being called.) -->
+              <input class="input" type="text" placeholder="Text input" ng-model="studentDetail.students.telephone">
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: relative; text-align: center">
+    <a ng-click="studentDetail.save(students)" id="studentDetailSubmitBtn" style="width: 150px" class="button is-primary">
+      <span class="icon">
+        <i class="fa fa-check"></i>
+      </span>
+      <span>Submit</span>
+    </a>
+  </div>
+</div>

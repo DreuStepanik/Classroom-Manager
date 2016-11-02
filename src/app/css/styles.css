@@ -1,0 +1,614 @@
+/*============================================/
+				  Body Default
+=============================================*/
+#mainBody {
+	background-color: #212121;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+/*============================================/
+				  Nav Default
+=============================================*/
+
+#projectTitle {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 2.4em;
+	color: #fff;
+}
+
+#navBar {
+	background-color: #000000;
+	color: #fff;
+	box-shadow: 0px 10px 5px #1a1a1a;
+}
+
+
+#navBarList{
+	font-size: 1.2em;
+	color: #fff;
+}
+
+#navDivider {
+	margin-top: 9.5px;
+}
+
+.icon {
+	color: #fff;
+}
+
+/*============================================/
+				Footer Default
+=============================================*/
+
+#footer {
+	height: 30px;
+	background-color: #000;
+	color: #fff;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#footerIcon {
+	color: #fff;
+}
+
+#linkedIn {
+	color: #fff;
+	font-size: 1.35em;
+}
+
+/*============================================/
+		    dashboard html page
+=============================================*/
+
+
+#lowerHeader {
+	text-align: center;
+	margin-top: 5px;
+}
+
+#header {
+	box-shadow: 0px 10px 5px #1a1a1a;
+	text-align: center;
+	background-image: url('../img/class2.jpg');
+	color: #fff;
+}
+
+#lowerHeaderIcon1 {
+	font-size: 4.5em;
+	color: #03a9f4;
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+#lowerHeaderIcon2 {
+	font-size: 4.5em;
+	color: #03a9f4;
+	margin-top: 100px;
+	margin-bottom: 35px;
+}
+
+#text1 {
+	font-size: 3.5em;
+}
+
+#text2 {
+	font-size: 1.7em;
+}
+
+#text3 {
+	font-size: 3.5em;
+}
+
+#text4 {
+	font-size: 3.5em;
+}
+
+#dashPanels {
+	margin-top: 15px;
+	background-color: #212121;
+	box-shadow: 0px 10px 5px #1a1a1a;
+	margin-bottom: 15px;
+}
+
+#dashPanel1 {
+	/*margin-left: 15px;*/
+	box-shadow: 0px 5px 5px #999999;
+}
+
+#dashPanelHeading1 {
+	background-color: #757575;
+	color: #fff;
+	font-size: 1.8em;
+}
+
+#dashPanelBodyText1 {
+	margin-top: 10px;
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+}	
+
+#dashPanelBodyText2 {
+	margin-top: 10px;
+	font-size: 1.7em;
+	text-align: center;
+	color: #fff;
+}
+
+#dashPanel2 {
+	box-shadow: 0px 5px 5px #999999;
+}
+
+#dashPanelHeading2 {
+	background-color: #757575;
+	color: #fff;
+	font-size: 1.8em;
+}
+
+#dashPanel3 {
+	/*margin-right: 15px;*/
+	box-shadow: 0px 5px 5px #999999;
+}
+
+#dashPanelHeading3 {
+	background-color: #757575;
+	color: #fff;
+	font-size: 1.8em;
+}
+
+.panel-heading {
+	text-align: center;
+	font-weight: bold;
+}
+
+/*============================================/
+		    Student Grid Html Page
+=============================================*/
+
+#studentGridHero {
+	box-shadow: 0px 15px 5px #1a1a1a;
+}
+
+#studentGrid {
+	margin-top: 25px;
+}
+
+#studentGridPanel{
+	box-shadow: 0px 5px 5px #999999;
+}
+
+#studentGridBtn {
+	float: right;
+    background-color: #03a9f4;
+    margin-top: 2.9px;
+}
+
+#studentGridBtn:hover {
+  border-color: #aeb1b5;
+}
+
+#studentGridPanelHeading {
+	background-color: #757575;
+	color: #fff;
+}
+
+#studentGridPanelHeading .has-text-left {
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+}
+
+#studentGridTable {
+	background-color: transparent;
+	color: #fff;
+}
+
+#studentGridTable tbody {
+	font-size: 1.6em;
+}
+
+#studentGridTable thead th {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+#studentGridEditButton {
+	color: #00e676;
+	margin-top: 4px;
+	font-size: .9em;
+}
+
+.table td.is-icon .fa, .table th.is-icon .fa {
+	margin-top: -4px;
+}
+
+#studentGridDeleteButton{
+	color: #ff3d00;
+	margin-top: 4px;
+}
+
+.table tr:hover {
+ 	background-color: transparent;
+ 	color: inherit;
+}
+
+/*============================================/
+		    Student Detail Html Page
+=============================================*/
+
+#studentDetailHero {
+	box-shadow: 0px 15px 5px #1a1a1a;
+	margin-bottom: 25px;
+}
+
+#studentDetailProjectSelect {
+    position: relative;
+    text-align: center;
+    padding-top: -10px;
+    padding-bottom: 25px;
+}
+
+/*#studentDetailPanel1 {
+	box-shadow: 0px 5px 5px #999999;
+	margin-bottom: 25px;
+}
+
+#studentDetailPanelHeading1 {
+	background-color: #607d8b;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+}*/
+
+#studentDetailPanel2 {
+	box-shadow: 0px 5px 5px #999999;
+	margin-bottom: 25px;
+}
+
+#studentDetailPanelHeading2 {
+	background-color: #607d8b;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#studentDetailPanel2Table {
+	background-color: transparent;
+	color: #fff;
+}
+
+#studentDetailPanel2Table tbody {
+	font-size: 1.5em;
+}
+
+#studentDetailPanel2Table thead th {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+#studentDetailPanel3 {
+	box-shadow: 0px 5px 5px #999999;
+	margin-bottom: 25px;
+}
+
+#studentDetailPanelHeading3 {
+	background-color: #757575;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#studentDetailPanel3Columns {
+	position: relative;
+	margin: 0 auto;
+}
+
+#studentDetailPanel3Columns .label {
+	color: #fff;
+	font-size: 1.4em;
+}
+
+#studentDetailPanel3Columns2 {
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+
+#studentDetailPanel3Columns2 .label {
+	color: #fff;
+	font-size: 1.4em;
+}
+
+#studentDetailSubmitBtn {
+	background-color: #03a9f4;
+    margin-bottom: 25px;
+}
+
+#studentDetailSubmitBtn:hover {
+  border-color: #aeb1b5;
+}
+
+/*============================================/
+		    Student AddStudent Html Page
+=============================================*/
+
+#studentAddStudentHero {
+	box-shadow: 0px 15px 5px #1a1a1a;
+	margin-bottom: 25px;
+}
+
+#studentAddStudentProjectSelect {
+    position: relative;
+    text-align: center;
+    padding-top: -10px;
+    padding-bottom: 25px;
+}
+
+#studentAddStudentPanel1 {
+	box-shadow: 0px 5px 5px #999999;
+	margin-bottom: 25px;
+}
+
+#studentAddStudentPanelHeading1 {
+	background-color: #607d8b;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#studentAddStudentPanel2 {
+	box-shadow: 0px 5px 5px #999999;
+	margin-bottom: 25px;
+}
+
+#studentAddStudentPanelHeading2 {
+	background-color: #757575;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#studentAddStudentPanel2Columns {
+	position: relative;
+	margin: 0 auto;
+}
+
+#studentAddStudentPanel2Columns .label {
+	color: #fff;
+	font-size: 1.4em;
+}
+
+#studentAddStudentPanel2Columns2 {
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+
+#studentAddStudentPanel2Columns2 .label {
+	color: #fff;
+	font-size: 1.4em;
+}
+
+#studentAddStudentSubmitBtn {
+	background-color: #03a9f4;
+    margin-bottom: 25px;
+}
+
+#studentAddStudentSubmitBtn:hover {
+  border-color: #aeb1b5;
+}
+
+
+/*============================================/
+		    Project Grid Html Page
+=============================================*/
+
+#projectGridHero {
+	box-shadow: 0px 15px 5px #1a1a1a;
+}
+
+#projectGrid {
+	margin-top: 25px;
+}
+
+#projectGridPanel{
+	box-shadow: 0px 5px 5px #999999;
+}
+
+#projectGridBtn {
+	float: right;
+    background-color: #03a9f4;
+    margin-top: 2.9px;
+}
+
+#projectGridBtn:hover {
+  border-color: #aeb1b5;
+}
+
+#projectGridPanelHeading {
+	background-color: #757575;
+	color: #fff;
+}
+
+#projectGridPanelHeading .has-text-left {
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+}
+
+#projectGridTable {
+	background-color: transparent;
+	color: #fff;
+}
+
+#projectGridTable tbody {
+	font-size: 1.6em;
+}
+
+#projectGridTable thead th {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+#projectGridEditButton {
+	color: #00e676;
+	margin-top: 4px;
+	font-size: .9em;
+}
+
+.table td.is-icon .fa, .table th.is-icon .fa {
+	margin-top: -4px;
+}
+
+#projectGridDeleteButton{
+	color: #ff3d00;
+	margin-top: 4px;
+}
+
+.table tr:hover {
+ 	background-color: transparent;
+ 	color: inherit;
+}
+
+/*============================================/
+		    Project Detail Html Page
+=============================================*/
+
+#projectDetailHero {
+	box-shadow: 0px 15px 5px #1a1a1a;
+	margin-bottom: 25px;
+}
+
+#projectDetailProjectSelect {
+    position: relative;
+    text-align: center;
+    padding-top: -10px;
+    padding-bottom: 25px;
+}
+
+#projectDetailPanel1 {
+	box-shadow: 0px 5px 5px #999999;
+	margin-bottom: 25px;
+}
+
+#projectDetailPanelHeading1 {
+	background-color: #607d8b;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#projectDetailPanel1Table {
+	background-color: transparent;
+	color: #fff;
+}
+
+#projectDetailPanel1Table tbody {
+	font-size: 1.5em;
+}
+
+#projectDetailPanel1Table thead th {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+#projectDetailPanel2 {
+	box-shadow: 0px 5px 5px #999999;
+	margin-bottom: 25px;
+}
+
+#projectDetailPanelHeading2 {
+	background-color: #757575;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#projectDetailPanel2Columns {
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+
+#projectDetailPanel2Columns .label {
+	color: #fff;
+	font-size: 1.4em;
+}
+
+#projectDetailSubmitBtn {
+	background-color: #03a9f4;
+    margin-bottom: 25px;
+}
+
+#projectDetailSubmitBtn:hover {
+  border-color: #aeb1b5;
+}
+
+/*============================================/
+		  Project AddProject Html Page
+=============================================*/
+
+#projectAddProjectHero {
+	box-shadow: 0px 15px 5px #1a1a1a;
+	margin-bottom: 25px;
+}
+
+#projectAddProjectProjectSelect AddProject{
+    position: relative;
+    text-align: center;
+    padding-top: -10px;
+    padding-bottom: 25px;
+}
+
+#projectAddProjectPanel {
+	box-shadow: 0px 5px 5px #999999;
+	margin-bottom: 25px;
+}
+
+#projectAddProjectPanelHeading {
+	background-color: #607d8b;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#projectAddProjectPanelColumns {
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+
+#projectAddProjectPanelColumns .label {
+	color: #fff;
+	font-size: 1.4em;
+}project
+
+#projectAddProjectSubmitBtn {
+	background-color: #03a9f4;
+    margin-bottom: 25px;
+}
+
+#projectAddProjectSubmitBtn:hover {
+  	border-color: #aeb1b5;
+}
+
+#projectAddProjectInput {
+	text-align: center;
+	position: relative;
+	width: 50%;
+	margin: 0 auto 20px auto;
+}
